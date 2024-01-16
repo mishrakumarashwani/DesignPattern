@@ -1,6 +1,6 @@
 package com.practice;
 
-public class DriverClass {
+public class MyClass {
 
 	public static void main(String[] args) {
 		Apple apple1 = Apple.getApple();
