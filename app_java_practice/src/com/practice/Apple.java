@@ -1,7 +1,7 @@
 package com.practice;
 
 public enum Apple {
-	INSTANCE
+	INSTANCE;
 //	private static Apple apple;
 	
 	// constructor
@@ -22,6 +22,9 @@ public enum Apple {
 //		}
 //		return apple;
 //	}
+	public void test() {
+		System.out.println("test method");
+	}
 
 }
 

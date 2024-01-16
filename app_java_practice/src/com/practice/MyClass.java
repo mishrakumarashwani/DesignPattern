@@ -23,6 +23,7 @@ public class MyClass {
 //		Apple a1 = Apple.getApple();
 		Apple a1 = Apple.INSTANCE;
 		System.out.println(a1.hashCode());
+		a1.test();
 		
 		Constructor<Apple> constructor = Apple.class.getDeclaredConstructor();
 		constructor.setAccessible(true);
