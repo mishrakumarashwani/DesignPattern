@@ -20,7 +20,8 @@ public class MyClass {
 		 * 			  2 -> use enum
 		 */
 		
-		Apple a1 = Apple.getApple();
+//		Apple a1 = Apple.getApple();
+		Apple a1 = Apple.INSTANCE;
 		System.out.println(a1.hashCode());
 		
 		Constructor<Apple> constructor = Apple.class.getDeclaredConstructor();

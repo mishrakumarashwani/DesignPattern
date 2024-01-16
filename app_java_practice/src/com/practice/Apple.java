@@ -1,26 +1,27 @@
 package com.practice;
 
-public class Apple {
-	private static Apple apple;
+public enum Apple {
+	INSTANCE
+//	private static Apple apple;
 	
 	// constructor
-	private Apple() {
-		if(apple != null) {
-			throw new RuntimeException("You are trying to break singleton pattern");
-		}
-	}
+//	private Apple() {
+//		if(apple != null) {
+//			throw new RuntimeException("You are trying to break singleton pattern");
+//		}
+//	}
 
 	// Lazy way of creating singleton object
-	public static Apple getApple() {
-		if(apple == null) {
-			synchronized(Apple.class) {
-				if(apple == null) {
-					apple = new Apple();
-				}
-			}
-		}
-		return apple;
-	}
+//	public static Apple getApple() {
+//		if(apple == null) {
+//			synchronized(Apple.class) {
+//				if(apple == null) {
+//					apple = new Apple();
+//				}
+//			}
+//		}
+//		return apple;
+//	}
 
 }
 
