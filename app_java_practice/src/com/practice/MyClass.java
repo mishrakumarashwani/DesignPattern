@@ -16,6 +16,8 @@ public class MyClass {
 		
 		/*
 		 * 1. Reflection API to break singleton pattern
+		 * 	solution: 1-> if object is there ==> throw exception from inside constructor
+		 * 			  2 -> use enum
 		 */
 		
 		Apple a1 = Apple.getApple();

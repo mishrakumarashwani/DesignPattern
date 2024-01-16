@@ -5,7 +5,9 @@ public class Apple {
 	
 	// constructor
 	private Apple() {
-
+		if(apple != null) {
+			throw new RuntimeException("You are trying to break singleton pattern");
+		}
 	}
 
 	// Lazy way of creating singleton object
